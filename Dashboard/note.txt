@@ -1,0 +1,2 @@
+all file here is used for running the streamlit
+the csv file is the one that has been cleaned and EDA
