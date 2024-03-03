@@ -1,0 +1,2 @@
+web deploy on development
+https://data-analytics-project-shunyi.streamlit.app/
