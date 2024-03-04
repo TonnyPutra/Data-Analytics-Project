@@ -1,2 +1,5 @@
 all file here is used for running the streamlit
 the csv file is the one that has been cleaned and EDA
+
+if u can't run the code in local, try to change the Dashboard/.. to ./..
+example: Dashboard/air.png to ./air.png
