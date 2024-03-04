@@ -14,4 +14,5 @@ streamlit run AirQuality-Shunyi.py
 
 ## Note:
 Start by inputing date, the web will process all the data and show the output. <br>
-The web is still limited in adjusting the available data, the web can only run with a date input range of 3/1/2013 - 2/28/2017.
+The web is still limited in adjusting the available data, the web can only run with a date input range of 3/1/2013 - 2/28/2017. <br>
+i'll try to write down problems i encounter in Dashboard/note.txt
