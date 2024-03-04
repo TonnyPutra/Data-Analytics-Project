@@ -70,7 +70,7 @@ max_date = data["Date"].max()
 
 with st.sidebar:
     # logo
-    st.image("air.png")
+    st.image("Dashboard/air.png")
 
     # determine start_date
     date = st.date_input(label="Date", min_value=min_date)
