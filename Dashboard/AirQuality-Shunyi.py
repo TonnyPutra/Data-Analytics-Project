@@ -61,10 +61,7 @@ def pca(df):
     pca_df["target"] = pca_df["target"].map(target_names)
     return pc1, pc2, pca_df["target"]
 
-
-
-# Load cleaned data
-data = pd.read_csv('./AirQualityClean.csv')
+data = pd.read_csv('Dashboard/AirQualityClean.csv')
 data["Date"] = pd.to_datetime(data["Date"])
 
 # Filter data
@@ -96,19 +93,19 @@ with st.sidebar:
 
     with col2:
         if main_df["RAIN"].sum() / len(main_df.index) == 0:
-            st.image("sunny.png", width=75)
+            st.image("Dashboard/sunny.png", width=75)
         elif (
             main_df["RAIN"].sum() / len(main_df.index) > 0
             and main_df["RAIN"].sum() / len(main_df.index) <= 1
         ):
-            st.image("rain.png", width=75)
+            st.image("Dashboard/rain.png", width=75)
         elif (
             main_df["RAIN"].sum() / len(main_df.index) > 1
             and main_df["RAIN"].sum() / len(main_df.index) <= 5
         ):
-            st.image("heavy_rain.png", width=75)
+            st.image("Dashboard/heavy_rain.png", width=75)
         else:
-            st.image("storm.png", width=75)
+            st.image("Dashboard/storm.png", width=75)
 
 st.header("Air Quality in Shunyi")
 st.subheader("Ozone Levels Over Time")
