@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
 import matplotlib.patches as mpatches
-import os
-
 
 # Helper function
 def reg(df):
@@ -64,10 +62,9 @@ def pca(df):
     return pc1, pc2, pca_df["target"]
 
 
-cwd = os.getcwd()
-file = os.path.join(cwd, "AirQualityClean.csv")
+with open('./AirQualityClean.csv', 'r') as csvfile:
 # Load cleaned data
-data = pd.read_csv(file)
+    data = pd.read_csv(csvfile)
 data["Date"] = pd.to_datetime(data["Date"])
 
 # Filter data
