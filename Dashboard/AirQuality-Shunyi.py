@@ -62,9 +62,9 @@ def pca(df):
     return pc1, pc2, pca_df["target"]
 
 
-with open('./AirQualityClean.csv', 'r') as csvfile:
+
 # Load cleaned data
-    data = pd.read_csv(csvfile)
+data = pd.read_csv('./AirQualityClean.csv')
 data["Date"] = pd.to_datetime(data["Date"])
 
 # Filter data
